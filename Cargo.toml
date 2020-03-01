@@ -1,0 +1,12 @@
+[package]
+name = "logv"
+version = "0.1.0"
+authors = ["Lilian A. Moraru <lilian.moraru90@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+better-panic = "0.2.0"
+tui = { git = "https://github.com/cjbassi/tui-rs", branch = "master", default-features = false, features = ["crossterm"] }
+
+[profile.release]
+lto = true
